@@ -1,0 +1,30 @@
+{
+  "name": "team-up",
+  "version": "0.0.0",
+  "description": "Sorts players into equivalent teams based on performance rating",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nguyenchr/team-up"
+  },
+  "keywords": [
+    "sort",
+    "team"
+  ],
+  "author": "Chris Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nguyenchr/team-up/issues"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.3",
+    "should": "~4.0.4"
+  },
+  "dependencies": {
+    "coffee-script": "~1.7.1",
+    "lodash": "~2.4.1"
+  }
+}
