@@ -2,11 +2,11 @@
 
 Sorts players into equivalent teams based on performance rating
 
-[![Build Status](https://travis-ci.org/nguyenchr/team-up.svg?branch=master)](https://travis-ci.org/nguyenchr/team-up)
+[![NPM](http://img.shields.io/npm/v/team-up.svg?style=flat)](https://npmjs.org/package/team-up)
 
-[![Dependency Status](https://david-dm.org/nguyenchr/team-up.png?theme=shields.io)](https://david-dm.org/nguyenchr/team-up)
-[![devDependency Status](https://david-dm.org/nguyenchr/team-up/dev-status.png?theme=shields.io)](https://david-dm.org/nguyenchr/team-up#info=devDependencies)
-
+[![Build Status](http://img.shields.io/travis/nguyenchr/team-up.svg?style=flat)](http://travis-ci.org/nguyenchr/team-up)
+[![Dependencies](http://img.shields.io/david/nguyenchr/team-up.svg?style=flat)](https://david-dm.org/nguyenchr/team-up)
+[![Dev dependencies](http://img.shields.io/david/dev/nguyenchr/team-up.svg?style=flat)](https://david-dm.org/nguyenchr/team-up)
 # using in your project
 
 ```javascript
