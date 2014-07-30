@@ -2,14 +2,13 @@ _ = require 'lodash'
 
 exports.sort = (players, opts) ->
 
-  sortedByPerformance = _.chain players
-   .sortBy sortByPerformance
+  buckets = _.chain players
+   .sortBy opts.sortBy or opts.field or 'performance'
    .reverse()
+   .groupBy (item, index) -> index % opts.numberOfTeams
+   .values()
+   .map (bucket) -> players: bucket
    .valueOf()
 
-  return teams: [0...opts.numberOfTeams].map (team, teamIndex) ->
-    players: _.filter sortedByPerformance, (player, playerIndex) ->
-      playerIndex%opts.numberOfTeams is teamIndex
-
-sortByPerformance = (player) ->
-  Math.min 100, player.performance
+  buckets.push(players:[]) for [0...(opts.numberOfTeams - buckets.length)]
+  buckets

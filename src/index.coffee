@@ -4,12 +4,13 @@ exports.sorters = require './sorters'
 
 exports.sort = (players, opts={}) ->
   _.defaults opts,
+    field: 'performance'
     sorter: 'schoolyard'
     numberOfTeams: 2
 
   validate players, opts
 
-  exports.sorters[opts.sorter] players, numberOfTeams: opts.numberOfTeams
+  exports.sorters[opts.sorter] players, opts
 
 validate = (players, opts) ->
 

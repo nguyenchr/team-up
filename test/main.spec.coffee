@@ -15,7 +15,7 @@ describe 'Teamup', ->
       {id: 4, performance: 50}
     ]
 
-    teamwork.sort(players).should.eql teams: [
+    teamwork.sort(players).should.eql [
       players: [
         {id: 4, performance: 50}
         {id: 3, performance: 20}
